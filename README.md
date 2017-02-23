@@ -6,12 +6,12 @@ Other wise, please use terminal and use command:
 
 `git clone https://github.com/vincentwang901130/UdacityProject`
 
-For the movie_trailer project:
-Go to the movie_trailer_website folder by type commad:
+##The movie_trailer project:
+Go to the movie_trailer_website folder, you can also type commad:
 
-`cd /'project path'/Movie_Trailer_Website`
+`cd /*project path*/Movie_Trailer_Website`
 
-Then, type command to generate html page:
+Then, you need to run the script to generate html. You can use command:
 
 `python entertainment_center.py to generate the html file`
 
