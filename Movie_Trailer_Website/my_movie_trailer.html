@@ -1,7 +1,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>My movie trailer!</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -75,11 +75,13 @@
         $(document).ready(function () {
           $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
-          });
-	  $('.movie-tile').hover(function(){
-	    $('h4').css("display", "block")
-	  });
-        });
+            });
+	  $('.movie-tile').hover(
+	   function () {$('h4').show();},
+    	   function () {$('h4').hide();}
+	   );	 
+	 });
+	
     </script>
 </head>
 
