@@ -1,6 +1,6 @@
 If you download the project, lease unzip the file
 Other wise, please use terminal and use command:
-#gitclone "https://github.com/vincentwang901130/UdacityProject"
+#git clone https://github.com/vincentwang901130/UdacityProject
 Go to the movie_trailer_website foler and use command:
 #python entertainment_center.py to generate the html file
 To view the trailer and picture you need to have internet connection.
