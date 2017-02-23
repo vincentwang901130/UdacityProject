@@ -13,7 +13,7 @@ Go to the movie_trailer_website folder, you can also type commad:
 
 Then, you need to run the script to generate html. You can use command:
 
-`python entertainment_center.py to generate the html file`
+`python entertainment_center.py`
 
 To view the trailer and picture you need to have internet connection.
 
