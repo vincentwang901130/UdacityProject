@@ -37,7 +37,7 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: white;
             cursor: pointer;
         }
         .scale-media {
@@ -53,8 +53,22 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
+	
+	h2 {
+	    display: block;
+	    font-size: 1.5em;
+	    font-weight: bold;
+	}
+	
 	h4 {
-	display: none;
+            display: none;
+	    font-size: 0.8em;
+	    font-weight: bold;
+	}
+	img.shadow{
+	  width: 220px;
+	  length: 342px;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -82,11 +96,10 @@ main_page_head = '''
             $(this).next("div").show("fast", showNext);
             });
 	  $('.movie-tile').hover(
-	   function () {$('h4').show();},
-    	   function () {$('h4').hide();}
+	   function () {$(this).find('h4').fadeIn("slow");},
+    	   function () {$(this).find('h4').fadeOut();}
 	   );	 
 	 });
-	
     </script>
 </head>
 '''
@@ -128,10 +141,10 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
+<div id="{movie_title}" class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+    <img class="shadow" src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
-    <h4 align="left">{movie_story}</h4>
+    <h4 align ="justify">{movie_story}</h4>
 </div>
 '''
 

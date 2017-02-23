@@ -32,7 +32,7 @@
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: white;
             cursor: pointer;
         }
         .scale-media {
@@ -48,8 +48,22 @@
             top: 0;
             background-color: white;
         }
+	
+	h2 {
+	    display: block;
+	    font-size: 1.5em;
+	    font-weight: bold;
+	}
+	
 	h4 {
-	display: none;
+            display: none;
+	    font-size: 0.8em;
+	    font-weight: bold;
+	}
+	img.shadow{
+	  width: 220px;
+	  length: 342px;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -77,11 +91,10 @@
             $(this).next("div").show("fast", showNext);
             });
 	  $('.movie-tile').hover(
-	   function () {$('h4').show();},
-    	   function () {$('h4').hide();}
+	   function () {$(this).find('h4').fadeIn("slow");},
+    	   function () {$(this).find('h4').fadeOut();}
 	   );	 
 	 });
-	
     </script>
 </head>
 
@@ -113,22 +126,22 @@
     </div>
     <div class="container">
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="n9DwoQ7HWvI" data-toggle="modal" data-target="#trailer">
-    <img src="http://www.mrmovie-review.com/wp-content/uploads/2016/12/spider-man-homecoming-movie-poster.jpg?x26928" width="220" height="342">
+<div id="Spider-Man: Homecoming" class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="n9DwoQ7HWvI" data-toggle="modal" data-target="#trailer">
+    <img class="shadow" src="http://www.mrmovie-review.com/wp-content/uploads/2016/12/spider-man-homecoming-movie-poster.jpg?x26928" width="220" height="342">
     <h2>Spider-Man: Homecoming</h2>
-    <h4 align="left">A young Peter Parker/Spider-Man begins to navigate his newfound identity as the web-slinging superhero.</h4>
+    <h4 align ="justify">A young Peter Parker/Spider-Man begins to navigate his newfound identity as the web-slinging superhero.</h4>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="6DBi41reeF0" data-toggle="modal" data-target="#trailer">
-    <img src="https://latestmovieposters.files.wordpress.com/2015/06/despicable_me_3_poster.png" width="220" height="342">
+<div id="Despicable Me 3" class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="6DBi41reeF0" data-toggle="modal" data-target="#trailer">
+    <img class="shadow" src="https://latestmovieposters.files.wordpress.com/2015/06/despicable_me_3_poster.png" width="220" height="342">
     <h2>Despicable Me 3</h2>
-    <h4 align="left">The adventures of Gru, Lucy, their adorable daughters Margo, Edith and Agnes and the Minions.</h4>
+    <h4 align ="justify">The adventures of Gru, Lucy, their adorable daughters Margo, Edith and Agnes and the Minions.</h4>
 </div>
 
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="fIHH5-HVS9o" data-toggle="modal" data-target="#trailer">
-    <img src="https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/520670e3e4b0bdc260062d14/1376153828097/DefendersOfEarth.jpg" width="220" height="342">
+<div id="Justice League" class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="fIHH5-HVS9o" data-toggle="modal" data-target="#trailer">
+    <img class="shadow" src="https://static1.squarespace.com/static/51b3dc8ee4b051b96ceb10de/t/520670e3e4b0bdc260062d14/1376153828097/DefendersOfEarth.jpg" width="220" height="342">
     <h2>Justice League</h2>
-    <h4 align="left">Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to face an even greater enemy.</h4>
+    <h4 align ="justify">Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to face an even greater enemy.</h4>
 </div>
 
     </div>
