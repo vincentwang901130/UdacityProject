@@ -9,7 +9,7 @@ Other wise, please use terminal and use command:
 For the movie_trailer project:
 Go to the movie_trailer_website folder by type commad:
 
-'cd /'project path'/Movie_Trailer_Website'
+`cd /'project path'/Movie_Trailer_Website`
 
 Then, type command to generate html page:
 `python entertainment_center.py to generate the html file`
