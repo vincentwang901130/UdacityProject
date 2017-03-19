@@ -1,0 +1,22 @@
+.container {
+    font-family: 'Lato', sans-serif;
+    color: #666666;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 15px;
+}
+
+header h1,
+header h4 {
+    font-weight: 300;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header h4 {
+    font-size: 25px;
+}
