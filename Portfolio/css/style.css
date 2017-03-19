@@ -1,6 +1,13 @@
 .container {
     font-family: 'Lato', sans-serif;
-    color: #666666;
+    color: #2d3c49;
+}
+
+.divided-line {
+    border: none;
+    height: 3px;
+    color: #7d97ad;
+    background-color: #7d97ad
 }
 
 .logo {
