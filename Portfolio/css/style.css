@@ -12,6 +12,15 @@
     background-color: #7d97ad
 }
 
+.footer-line {
+    border: none;
+    height: 1px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: #7d97ad;
+    background-color: #7d97ad;
+}
+
 .logo {
     width: 100px;
     margin-top: 15px;
@@ -19,6 +28,12 @@
 
 .section-lv2-title {
     color: #7d97ad;
+}
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 header h1 {
@@ -37,5 +52,5 @@ section h3 {
 }
 
 section p {
-    font-size: 12px;
+    word-wrap: break-word;
 }
